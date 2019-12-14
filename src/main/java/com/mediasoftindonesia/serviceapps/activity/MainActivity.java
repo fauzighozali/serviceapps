@@ -1,4 +1,4 @@
-package com.mediasoftindonesia.serviceapps;
+package com.mediasoftindonesia.serviceapps.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
@@ -9,6 +9,9 @@ import android.util.Log;
 import android.view.MenuItem;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+import com.mediasoftindonesia.serviceapps.R;
+import com.mediasoftindonesia.serviceapps.fragment.HomeFragment;
+import com.mediasoftindonesia.serviceapps.fragment.HistoryFragment;
 import com.mediasoftindonesia.serviceapps.utils.BottomNavigationViewHelper;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                     transaction.replace(R.id.content, new HomeFragment()).commit();
                     return true;
                 case R.id.ic_profile:
-                    transaction.replace(R.id.content, new ProfileFragment()).commit();
+                    transaction.replace(R.id.content, new HistoryFragment()).commit();
                     return true;
             }
             return false;

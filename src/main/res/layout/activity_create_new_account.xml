@@ -6,17 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context="com.mediasoftindonesia.serviceapps.CreateNewAccountActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:textSize="20sp"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"/>
+    tools:context="com.mediasoftindonesia.serviceapps.activity.CreateNewAccountActivity">
 
     <LinearLayout
         android:id="@+id/linear_layout"
@@ -36,12 +26,12 @@
             android:layout_marginRight="10dp">
 
             <EditText
-                android:id="@+id/nameEditText"
+                android:id="@+id/edit_text_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:ems="10"
-                android:hint="Username"
+                android:hint="Nama"
                 android:inputType="textPersonName"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
@@ -57,7 +47,7 @@
             android:layout_marginRight="10dp">
 
             <EditText
-                android:id="@+id/emailEditText"
+                android:id="@+id/edit_text_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -78,7 +68,7 @@
             android:layout_marginRight="10dp">
 
             <EditText
-                android:id="@+id/passwordEditText"
+                android:id="@+id/edit_text_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -99,12 +89,12 @@
             android:layout_marginRight="10dp">
 
             <EditText
-                android:id="@+id/noTelpEditText"
+                android:id="@+id/edit_text_noTelp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:ems="10"
-                android:hint="Nomor telephone"
+                android:hint="Nomor telfon"
                 android:inputType="number"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
@@ -121,7 +111,7 @@
             android:layout_marginBottom="10dp">
 
             <EditText
-                android:id="@+id/alamatEditText"
+                android:id="@+id/edit_text_alamat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
@@ -141,7 +131,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/create_button_login"
-        android:text="SIGN UP"
+        android:text="Daftar"
         android:textColor="#FFFFFF"
         android:layout_margin="15dp"
         android:layout_below="@id/linear_layout"/>

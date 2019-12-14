@@ -1,4 +1,4 @@
-package com.mediasoftindonesia.serviceapps;
+package com.mediasoftindonesia.serviceapps.model;
 
 public class Service {
 
